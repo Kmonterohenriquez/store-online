@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1400px;
+}
+
+.sm-container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.xsm-container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1000px;
+}
+/*# sourceMappingURL=App.css.map */
