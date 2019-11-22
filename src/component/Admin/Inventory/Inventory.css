@@ -1,1 +1,100 @@
-/* No CSS *//*# sourceMappingURL=Inventory.css.map */
+@import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
+@import url(c:\Users\kevin\OneDrive\Escritorio\projects\store-online\src\component\Admin\Inventory\Inventory.css);
+* {
+  margin: 0;
+  font-family: 'Comfortaa', cursive;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1400px;
+}
+
+.sm-container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.xsm-container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1000px;
+}
+
+.Inventory {
+  padding: 100px 0;
+}
+
+.Inventory-title {
+  color: #858585;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.Inventory table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+
+.Inventory table thead tr {
+  background: #1089FF;
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+  font-weight: bold;
+}
+
+.Inventory table th, .Inventory table td {
+  padding: 12px 15px;
+}
+
+.Inventory table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  background: white;
+}
+
+.Inventory table tbody tr:nth-child(even) {
+  background: #e8e8e8;
+}
+
+.btn {
+  border-style: none;
+  padding: 7px 25px;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: background .5s;
+  transition: background .5s;
+}
+
+.delete-btn {
+  background: #ff0000;
+}
+
+.delete-btn:hover {
+  background: #cc0000;
+}
+
+.edit-btn {
+  background: #3FC5F0;
+}
+
+.edit-btn:hover {
+  background: #12b5ea;
+}
+
+.add-btn {
+  background: #10CD79;
+}
+
+.add-btn:hover {
+  background: #0c9e5d;
+}
+/*# sourceMappingURL=Inventory.css.map */

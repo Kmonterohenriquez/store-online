@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
 * {
   margin: 0;
+  font-family: 'Comfortaa', cursive;
 }
 
 .container {
@@ -64,6 +66,14 @@
 
 .Navbar-container nav ul li {
   list-style: none;
-  padding: 10px;
+}
+
+.Navbar-container nav ul li a {
+  padding: 30px;
+  cursor: pointer;
+}
+
+.Navbar-container nav ul li a:hover {
+  border-bottom: 3px solid red;
 }
 /*# sourceMappingURL=AdminNav.css.map */

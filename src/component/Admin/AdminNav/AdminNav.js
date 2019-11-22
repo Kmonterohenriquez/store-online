@@ -8,7 +8,7 @@ class AdminNav extends Component {
             <div className='Navbar'>
                 <div className=' Navbar-container container'>
                     <div id='logo'>
-                    <p><i class="fab fa-bity"></i>Admin Section</p>
+                    <p><i class="fab fa-bity"></i>Admin Center</p>
                     </div>
                     <nav>
                         <ul>

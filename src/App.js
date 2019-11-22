@@ -1,16 +1,19 @@
 import React from 'react';
 // import Navbar from './component/Navbar/Navbar/Navbar'
-import AdminSystem from './component/Admin/AdminSystem/AdminSystem'
+import AdminSystem from './Pages/AdminSystem/AdminSystem'
 import './App.css'
+import { BrowserRouter as Router,Route } from 'react-router-dom'
+
+import Home from './Pages/Home/Home'
+
 
 function App() {
   return (
     <div className="App">
-      {/* <Navbar /> */}
-      <AdminSystem/>
-      <div id='general-container'>
-
-      </div>
+      <Router>
+          <Route exact path='/' component={ Home }/>
+          <Route exact path='/Admin' component={ AdminSystem }/>
+      </Router>
     </div>
   );
 }

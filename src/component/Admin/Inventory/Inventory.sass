@@ -1,0 +1,61 @@
+@import '../../../App'
+@import '../Inventory/Inventory.css'
+.Inventory 
+    padding: 100px 0
+
+    &-title 
+        color: $grey-title 
+        font-size: 1.5rem
+        margin-bottom: 15px
+
+    // Table Style
+    table
+        width: 100%
+        border-collapse: collapse
+        margin: 25px 0
+        font-size: 0.9em
+        border-radius:  5px 5px 0 0
+        overflow: hidden
+
+        thead tr 
+            background: #1089FF
+            color: white
+            font-size: 1rem
+            text-align: left
+            font-weight: bold
+
+        th, td 
+            padding: 12px 15px
+        
+        tbody tr 
+            border-bottom: 1px solid #dddddd
+            background: white
+        
+            &:nth-child(even)
+                background: #e8e8e8
+
+    // Buttons Style
+.btn 
+    border-style: none
+    padding: 7px 25px
+    border-radius: 30px
+    color: white
+    cursor: pointer
+    outline: none
+    transition: background .5s
+
+.delete-btn 
+    background: $red-btn
+    &:hover 
+        background: darken($red-btn, 10%)
+.edit-btn
+    background: $blue-btn
+    &:hover 
+        background: darken($blue-btn, 10%)
+
+.add-btn
+    background: $green-btn
+    &:hover 
+        background: darken($green-btn, 10%)
+
+                

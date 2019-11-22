@@ -11,14 +11,16 @@ module.exports = {
         res.status(200).send(products[index])
     },
     createProduct(req, res){
-        const {name, price, description, qty} =req.body;
-        const newProduct = {
+        const {name, price, description, qty} = req.body;
+        let newProduct = {
             id: id++,
             name,
             price,
             description,
             qty,
         }
+        // console.log(req.body)
+        // console.log(req.body.name)
         products.push(newProduct);
         res.status(200).send(products);
     },
