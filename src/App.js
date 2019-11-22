@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './component/Navbar/Navbar/Navbar'
+// import Navbar from './component/Navbar/Navbar/Navbar'
 import AdminSystem from './component/Admin/AdminSystem/AdminSystem'
 import './App.css'
 

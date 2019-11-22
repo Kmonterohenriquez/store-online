@@ -13,8 +13,7 @@ class AdminNav extends Component {
                     <nav>
                         <ul>
                             <li><a>Home</a></li>
-                            <li><a>user</a></li>
-                            <li><a>About Us</a></li>
+                            <li><a>sign out</a></li>
                         </ul>
                     </nav>
                 </div>
