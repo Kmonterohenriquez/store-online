@@ -1,5 +1,5 @@
 const products = require('../products');
-let id = 6;
+let id = products.length+1;
 
 module.exports = {
     getProducts(req, res){

@@ -9,7 +9,7 @@ app.use(express.json());
 
 // Destructoring Functions from Products
 const { getProducts, getSingleProduct, createProduct, updateProduct, deleteProduct } = productsCtrl;
-
+        
 // Endpoints
 app.get('/api/products', getProducts);
 app.get('/api/product/:id', getSingleProduct)

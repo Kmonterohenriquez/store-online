@@ -1,1 +1,65 @@
-/* No CSS *//*# sourceMappingURL=ItemContainer.css.map */
+.ItemContainer {
+  padding: 100px 0;
+  position: relative;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.SingleItem {
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 8px #00000020;
+          box-shadow: 0 3px 8px #00000020;
+  position: relative;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.SingleItem:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.SingleItem-picture {
+  height: 150px;
+  background: black;
+}
+
+.SingleItem-info {
+  padding: 18px 20px;
+  height: 70px;
+}
+
+.SingleItem-info h1 {
+  font-size: 0.8rem;
+  margin-bottom: 2px;
+}
+
+.SingleItem-info p {
+  font-size: 0.9rem;
+}
+
+.SingleItem-info button {
+  cursor: pointer;
+  border-style: none;
+  border-radius: 30px;
+  padding: 8px 12px;
+  color: white;
+  background: #3FC5F0;
+  position: absolute;
+  bottom: 13px;
+  right: 13px;
+}
+
+.SingleItem-info button:hover {
+  background: #12b5ea;
+}
+/*# sourceMappingURL=ItemContainer.css.map */

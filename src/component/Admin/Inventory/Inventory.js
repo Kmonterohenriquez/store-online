@@ -11,7 +11,7 @@ class Inventory extends Component {
     getProducts(){
         axios.get('/api/products')
         .then(res =>{
-            console.log('getting products:', res)
+            console.log('getting products:', res.data)
             const products = res.data;
             this.setState({ products })
         })

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './AdminNav.css'
+import { Link } from 'react-router-dom'
 
 class AdminNav extends Component {
     state = {  }
@@ -8,11 +9,11 @@ class AdminNav extends Component {
             <div className='Navbar'>
                 <div className=' Navbar-container container'>
                     <div id='logo'>
-                    <p><i class="fab fa-bity"></i>Admin Center</p>
+                    <p><i class="fas fa-dice-d20"></i>Admin Center</p>
                     </div>
                     <nav>
                         <ul>
-                            <li><a>Home</a></li>
+                            <li><Link to='/'>Home</Link></li>
                             <li><a>sign out</a></li>
                         </ul>
                     </nav>

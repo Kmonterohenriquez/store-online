@@ -1,0 +1,49 @@
+
+.ItemContainer
+    padding: 100px 0
+    position: relative
+
+.grid-container
+    display: grid 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+    grid-gap: 20px
+
+
+// Single Item Style
+.SingleItem
+    overflow: hidden 
+    border-radius: 10px
+    box-shadow: 0 3px 8px #00000020
+    position: relative
+    transition: transform .5s
+    
+    &:hover 
+        transform: scale(1.05)
+
+    &-picture 
+        height: 150px
+        background: black
+    &-info
+        padding: 18px 20px  
+        height: 70px
+        h1
+            font-size: 0.8rem
+            margin-bottom: 2px
+        p 
+            font-size: 0.9rem
+        
+        button 
+            cursor: pointer
+            border-style: none 
+            border-radius: 30px
+            padding: 8px 12px
+            color: white
+            background: #3FC5F0
+
+            position: absolute
+            bottom: 13px
+            right: 13px
+            &:hover 
+                background: darken(#3FC5F0 ,10%)
+
+
