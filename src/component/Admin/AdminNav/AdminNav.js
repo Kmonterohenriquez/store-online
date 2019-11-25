@@ -6,7 +6,7 @@ class AdminNav extends Component {
     state = {  }
     render() {
         return (
-            <div className='Navbar'>
+            <header className='Navbar'>
                 <div className=' Navbar-container container'>
                     <div id='logo'>
                     <p><i class="fas fa-dice-d20"></i>Admin Center</p>
@@ -14,11 +14,11 @@ class AdminNav extends Component {
                     <nav>
                         <ul>
                             <li><Link to='/'>Home</Link></li>
-                            <li><a>sign out</a></li>
+                            <li>sign out</li>
                         </ul>
                     </nav>
                 </div>
-            </div>
+            </header>
         );
     }
 }

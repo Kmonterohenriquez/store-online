@@ -28,11 +28,7 @@
   max-width: 1000px;
 }
 
-.AddNewItem {
-  padding-bottom: 100px;
-}
-
-.AddNewItem-title {
+.AddNewItem-title, .EditItem-title {
   color: #858585;
   font-size: 1.5rem;
   margin-bottom: 20px;

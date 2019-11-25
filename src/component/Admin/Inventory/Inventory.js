@@ -2,30 +2,13 @@ import React, { Component } from 'react'
 import ItemRow from '../ItemRow/ItemRow'
 import './Inventory.css'
 
-import axios from 'axios'
-class Inventory extends Component {
-    state = { 
-        products: []
-     }
-    
-    getProducts(){
-        axios.get('/api/products')
-        .then(res =>{
-            console.log('getting products:', res.data)
-            const products = res.data;
-            this.setState({ products })
-        })
-        .catch( err => console.log(err))
-    }
-    componentDidMount(){
-        this.getProducts();
-    }
-
-    render() {
+// import axios from 'axios'
+class Inventory extends Component { 
+   render() {
         return (
             <div className='Inventory xsm-container'>
                 <h1 className='Inventory-title'>Inventory</h1>
-                <table cellspacing="0" cellpadding="0" >
+                <table cellSpacing="0" cellPadding="0" >
                     <thead>
                         <tr id='head-row'>
                             <th>ID</th>
@@ -36,12 +19,15 @@ class Inventory extends Component {
                         </tr>
                     </thead>
                     <tbody>
-                        {this.state.products.map( curr => (
+                        {this.props.products.map( curr => (
                                 <ItemRow 
                                     id = {curr.id}
                                     name = {curr.name}
                                     qty = {curr.qty}
-                                    getProductsFn= {this.getProducts}
+                                    deleteProductFn= {this.props.deleteProductFn}
+                                    updateProduct= {this.props.updateProduct}
+                                    getUpdateBody= {this.props.getUpdateBody}
+                                    showEditItem= {this.props.showEditItem}
                                 /> 
                                 )
                         )}

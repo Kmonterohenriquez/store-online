@@ -24,12 +24,14 @@ class ItemContainer extends Component {
         
         return (
             <div className='ItemContainer '>
+                <h1 id='title'>Our Products</h1>
                 {/* <div className='main-bg'>
                     <img src={bg} alt='background'/>
                 </div> */}
                 <div className='xsm-container grid-container'>
-                    {this.state.products.map(item =>(
-                        <SingleItem 
+                    {this.state.products.map((item, i) =>(
+                        <SingleItem
+                            id= {item.id}
                             name = {item.name}
                             qty = {item.qty}
                         />

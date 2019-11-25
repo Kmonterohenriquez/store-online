@@ -19,16 +19,13 @@ module.exports = {
             description,
             qty,
         }
-        // console.log(req.body)
-        // console.log(req.body.name)
+        
         products.push(newProduct);
         res.status(200).send(products);
     },
     updateProduct(req, res){
         const { id } = req.params;
         const { newName, newPrice, newDescription, newQty } = req.body;
-        console.log(id)
-        console.log(newName)
         const index = products.findIndex(curr => curr.id === +id);
 
         products[index].name = newName;

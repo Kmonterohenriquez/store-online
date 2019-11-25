@@ -25,7 +25,7 @@ class AddNewItem extends Component {
     }
 
 
-    handleSubmit =(e)=> {
+    handleSubmit =()=> {
         // e.preventDefault();
         const { name, price, qty, description }= this.state;
         let newProduct={
@@ -36,8 +36,8 @@ class AddNewItem extends Component {
         };
 
         axios.post('/api/products', newProduct)
-        .then(res => 
-            console.log("Product created:", res))
+        .then(
+            console.log("Product created"))
         .catch( error => console.log(error))       
     }
 
@@ -70,23 +70,3 @@ class AddNewItem extends Component {
 }
 
 export default AddNewItem;
-
-{/* <form onSubmit={this.handleSubmit}>
-                <table >
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Quantity</th>
-                            <th>Description</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    {/* <tr>
-                        <th><input type='text' name='name' placeholder='Enter Item Name' onChange = {this.changeHandler}/></th>
-                        <th><input type='text' name='qty' placeholder='Enter Qty' onChange = {this.changeHandler}/></th>
-                        <th><input type='text' name='desctiption' placeholder='Enter Desctiption' onChange = {this.changeHandler}/></th>
-                        <th><button onClick={this.addItem}>Add</button></th>
-                    </tr> */}
-                    
-                    // </table>
-              

@@ -13,6 +13,7 @@ function App() {
       <Router>
           <Route exact path='/' component={ Home }/>
           <Route exact path='/Admin' component={ AdminSystem }/>
+          {/* <Route exact path='/about' component={ About}/> */}
       </Router>
     </div>
   );
