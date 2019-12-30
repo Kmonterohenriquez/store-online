@@ -16,6 +16,7 @@ class ItemContainer extends Component {
             this.setState({ products })
         })
         .catch( err => console.log(err))
+
     }
     componentDidMount(){
         this.getItems()
@@ -34,6 +35,7 @@ class ItemContainer extends Component {
                             id= {item.id}
                             name = {item.name}
                             qty = {item.qty}
+                            price = {item.price}
                         />
                     ))}
                 </div>

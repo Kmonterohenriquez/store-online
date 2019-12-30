@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EAIH,UAAU,EAAE,KAAK;EACjB,OAAO,EAAE,IAAI;CAGc;;AAR/B,AAMI,MANE,CAMF,CAAC,CAAC;EACE,KAAK,EAAE,KAAK;EACZ,UAAU,EAAE,MAAM;CAAG",
     "sources": [
         "Footer.sass"
     ],

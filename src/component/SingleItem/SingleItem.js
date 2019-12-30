@@ -16,7 +16,7 @@ class SingleItem extends Component {
         .catch( error => console.log(error))     
     }
     render() {
-        const {name , qty, id} = this.props;
+        const {name , qty, id, price} = this.props;
         return (
             <div className='SingleItem' key={id}>
                 <div className='SingleItem-picture'>
@@ -24,7 +24,8 @@ class SingleItem extends Component {
                 </div>
                 <div className='SingleItem-info'>
                     
-                    <h1>{name}</h1>
+                    <h1>{name} ${price}</h1>
+                    
                     <p>Available:  {qty}</p>
                     <button onClick={this.updateProduct}>Add item</button>
                 </div>

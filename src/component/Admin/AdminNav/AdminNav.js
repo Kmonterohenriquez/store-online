@@ -1,10 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './AdminNav.css'
 import { Link } from 'react-router-dom'
 
-class AdminNav extends Component {
-    state = {  }
-    render() {
+function AdminNav(){
         return (
             <header className='Navbar'>
                 <div className=' Navbar-container container'>
@@ -20,7 +18,6 @@ class AdminNav extends Component {
                 </div>
             </header>
         );
-    }
 }
 
 export default AdminNav;

@@ -1,1 +1,10 @@
-/* No CSS *//*# sourceMappingURL=Footer.css.map */
+footer {
+  background: black;
+  padding: 10px;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
+/*# sourceMappingURL=Footer.css.map */

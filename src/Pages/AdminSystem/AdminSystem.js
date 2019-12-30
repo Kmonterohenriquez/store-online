@@ -5,6 +5,7 @@ import AdminNav from '../../component/Admin/AdminNav/AdminNav'
 import Inventory from '../../component/Admin/Inventory/Inventory'
 import AddNewItem from '../../component/Admin/AddNewItem/AddNewItem'
 import EditItem from '../../component/Admin/EditItem/EditItem'
+import Footer from '../../component/Footer/Footer'
 
 class AdminSystem extends Component {
     constructor(props){
@@ -62,7 +63,7 @@ class AdminSystem extends Component {
         return (
             <div>
                 <AdminNav />
-                <div style={ {padding: 100}}>
+                <div style={ {padding: 80}}>
                     {
                         this.state.editItem? 
                         <EditItem  
@@ -81,6 +82,7 @@ class AdminSystem extends Component {
                     getUpdateBody= {this.getUpdateBody}
                     showEditItem= {this.showEditItem}
                 />
+                <Footer/>
                     </div>
         );
     }
